@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Header from "./components/Header";
 import { createContext, Dispatch, SetStateAction, useState } from "react";
 
@@ -19,6 +19,7 @@ const Home = () => {
     <AppContext.Provider value={{ tab, setTab }}>
       <div className="h-screen w-screen">
         <Header />
+        <Link className="p-2 shadow-md" to='/projects'>Projects</Link>
         <Outlet />
       </div>
     </AppContext.Provider>
