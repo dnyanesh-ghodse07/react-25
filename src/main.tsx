@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
-import Projects from "./pages/Projects.tsx";
-import Accordion from "./pages/Accordion.tsx";
 import Tabs from "./pages/Tabs.tsx";
 import ImageSlider from "./pages/ImageSlider.tsx";
 import StarRating from "./pages/StarRating.tsx";
+import AccordionPage from "./pages/AccordionPage.tsx";
+import RandomColorGeneratorPage from "./pages/RandomColorGeneratorPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -15,27 +15,26 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/projects",
-        element: <Projects />,
-        children: [
-          {
-            path: "accordion",
-            element: <Accordion />,
-          },
-          {
-            path: "tabs",
-            element: <Tabs />,
-          },
-          {
-            path: "image-slider",
-            element: <ImageSlider />,
-          },
-          {
-            path: "start-rating",
-            element: <StarRating />,
-          },
-        ],
+        index: true,
+        path: "accordion",
+        element: <AccordionPage />,
       },
+      {
+        path: "tabs",
+        element: <Tabs />,
+      },
+      {
+        path: "image-slider",
+        element: <ImageSlider />,
+      },
+      {
+        path: "start-rating",
+        element: <StarRating />,
+      },
+      {
+        path: 'random-color-generator',
+        element: <RandomColorGeneratorPage/>
+      }
     ],
   },
 ]);

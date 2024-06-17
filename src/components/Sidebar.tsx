@@ -4,7 +4,13 @@ import { AppContext } from "../App";
 
 const Sidebar = () => {
   const { setTab } = useContext(AppContext);
-  const projectList = ["accordion", "tabs", "image-slider", "start-rating"];
+  const projectList = [
+    "accordion",
+    "tabs",
+    "image-slider",
+    "start-rating",
+    "random-color-generator",
+  ];
   return (
     <div className="flex flex-col gap-2 h-full">
       {projectList.map((item) => {
