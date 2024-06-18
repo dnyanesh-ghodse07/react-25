@@ -4,10 +4,10 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import Tabs from "./pages/Tabs.tsx";
-import ImageSlider from "./pages/ImageSlider.tsx";
 import AccordionPage from "./pages/AccordionPage.tsx";
 import RandomColorGeneratorPage from "./pages/RandomColorGeneratorPage.tsx";
 import StarRatingPage from "./pages/StarRatingPage.tsx";
+import ImageSliderPage from "./pages/ImageSliderPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: "image-slider",
-        element: <ImageSlider />,
+        element: <ImageSliderPage />,
       },
       {
         path: "star-rating",
