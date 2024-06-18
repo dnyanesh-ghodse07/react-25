@@ -12,7 +12,7 @@ const DocPage = ({
     <div className="">
       <div>
         <h1 className="text-2xl p-2">Component : </h1>
-        <div>{component}</div>
+        <div className="flex justify-center items-center">{component}</div>
       </div>
       <div>
         <h1 className="text-2xl p-2">Code</h1>

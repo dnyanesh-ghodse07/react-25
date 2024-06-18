@@ -8,14 +8,14 @@ const Sidebar = () => {
     "accordion",
     "tabs",
     "image-slider",
-    "start-rating",
+    "star-rating",
     "random-color-generator",
   ];
   return (
     <div className="flex flex-col gap-2 h-full">
-      {projectList.map((item) => {
+      {projectList.map((item, index) => {
         return (
-          <SidebarItem key={item} label={item} onClick={() => setTab(item)} />
+          <SidebarItem key={item} index={index} label={item} onClick={() => setTab(item)} />
         );
       })}
     </div>

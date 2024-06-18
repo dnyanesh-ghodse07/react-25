@@ -5,9 +5,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.tsx";
 import Tabs from "./pages/Tabs.tsx";
 import ImageSlider from "./pages/ImageSlider.tsx";
-import StarRating from "./pages/StarRating.tsx";
 import AccordionPage from "./pages/AccordionPage.tsx";
 import RandomColorGeneratorPage from "./pages/RandomColorGeneratorPage.tsx";
+import StarRatingPage from "./pages/StarRatingPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
         element: <ImageSlider />,
       },
       {
-        path: "start-rating",
-        element: <StarRating />,
+        path: "star-rating",
+        element: <StarRatingPage />,
       },
       {
         path: 'random-color-generator',
